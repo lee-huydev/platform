@@ -9,7 +9,7 @@ export default function Popup() {
         <div className={cx('Popup_container')} >
             <Header title='System Warning'/> 
             <Content/>
-            <FooterPopup/>
+            {/* <FooterPopup/> */}
         </div>
 
     ); 
