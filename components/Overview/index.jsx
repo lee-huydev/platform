@@ -1,6 +1,8 @@
 import style from './style.module.scss'
+import Input from '../partials/Input'
+import InputNum from '../partials/InputNum'
 const Overview = () => {
-    return <h3 className={style.title}>Overview page</h3>
+    return <InputNum />
 }
 
 export default Overview
