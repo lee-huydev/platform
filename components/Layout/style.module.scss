@@ -1,0 +1,29 @@
+@import '../../styles/variables';
+.layout {
+   display: flex;
+   height: 100vh;
+   flex-direction: column;
+   justify-content: space-between;
+   position: relative;
+   .bg_img {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-size: cover;
+      background-repeat: repeat;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+         url(https://beta.huntgem.io/modules/huntgem/assets/img/background.png);
+   }
+   .content {
+      display: flex;
+      .slide_bar {
+         width: 30%;
+      }
+      .main {
+         width: 70%;
+      }
+   }
+}
