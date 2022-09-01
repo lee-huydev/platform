@@ -1,0 +1,28 @@
+@import '../../../styles/variables';
+.input_wrapper {
+    margin: 100px;
+    width: 70px;
+    height: 80px;
+    display: block;
+    position: relative;
+    .line {
+        width: 100%;
+        height: 1px;
+        background-color: $neutral_8;
+        position: absolute;
+        top: -20px;
+    }
+    .input {
+        width: 100%;
+        height: 100%;
+        background-color: $neutral_8;
+        color: $neutral_7;
+        border: none;
+        outline: none;
+        border: 1px solid $primary_7;
+        border-radius: 5px;
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+    }
+}
