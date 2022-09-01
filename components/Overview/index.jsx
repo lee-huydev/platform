@@ -1,6 +1,31 @@
 import style from './style.module.scss'
-const Overview = () => {
-    return <h3 className={style.title}>Overview page</h3>
-}
+import Button  from '../partials/Button/index'
+import Popup from '../Popup/index';
+export default function Home() {
+    return (
+      <>
+        <Button 
+          small
+          btnsmallblur
+        >
+          BUTTON
+        </Button>
+        <Button 
+          large
+        >
+          BUTTON
+        </Button><Button 
+          small
+        >
+          BUTTON
+        </Button><Button 
+          small
+          btntranspar
+        >
+          BUTTON
+        </Button>
+        <Popup/>
+      </>
 
-export default Overview
+    );
+  }
