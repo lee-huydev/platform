@@ -25,12 +25,14 @@ const Menu = () => {
          <div className={style.infor_items}>
             <ul className={style.menu_item}>
                <li>
-                  <a href="">
+                  <a href="/my-account/overview/">
                      <lord-icon
-                        src="https://cdn.lordicon.com/wwbrugun.json"
+                        src="https://cdn.lordicon.com/lsqbzprc.json"
+                        target="li"
                         trigger="hover"
-                        colors="primary:#fff"
-                        style={{width: '35px', height: '35px'}}
+                        stroke="100"
+                        colors="primary:#00FFFF"
+                        style={{ width: '50px', height: '35px' }}
                      />
                      <div className={style.gr_text}>
                         <b>Overview</b>
@@ -38,10 +40,54 @@ const Menu = () => {
                      </div>
                   </a>
                </li>
-               <li></li>
-               <li></li>
-               <li></li>
-               <li></li>
+               <li>
+                  <a href="/my-account/profile/">
+                     <lord-icon
+                        src="https://cdn.lordicon.com/tdvuekwf.json"
+                        target="li"
+                        stroke="100"
+                        trigger="hover"
+                        colors="primary:#00FFFF"
+                        style={{ width: '50px', height: '50px' }}
+                     />
+                     <div className={style.gr_text}>
+                        <b>Profile</b>
+                        <p>Account detail &amp; Security</p>
+                     </div>
+                  </a>
+               </li>
+               <li>
+                  <a href="/my-account/history/">
+                     <lord-icon
+                        src="https://cdn.lordicon.com/kbtmbyzy.json"
+                        target="li"
+                        stroke="100"
+                        trigger="hover"
+                        colors="primary:#00FFFF"
+                        style={{ width: '50px', height: '40px' }}
+                     />
+                     <div className={style.gr_text}>
+                        <b>History</b>
+                        <p>Transaction &amp; Trading</p>
+                     </div>
+                  </a>
+               </li>
+               <li>
+                  <a href="/my-account/affiliate/">
+                     <lord-icon
+                        src="https://cdn.lordicon.com/vysznwyv.json"
+                        target="li"
+                        stroke="100"
+                        trigger="hover"
+                        colors="primary:#00FFFF"
+                        style={{ width: '50px', height: '40px' }}
+                     />
+                     <div className={style.gr_text}>
+                        <b>Affiliate</b>
+                        <p>Affiliate</p>
+                     </div>
+                  </a>
+               </li>
             </ul>
          </div>
       </div>
