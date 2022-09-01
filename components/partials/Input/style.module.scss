@@ -1,0 +1,43 @@
+@import '../../../styles/variables';
+
+.input_wrapper {
+   width: 100%;
+   position: relative;
+   .input_item {
+      background-color: transparent;
+      width: 100%;
+      padding: 5px 0;
+      border: none;
+      outline: none;
+      color: $neutral_7;
+      font-size: 16px;
+      border-bottom: 1px solid $neutral_5;
+      &:focus {
+         border-bottom: 1px solid $primary_1;
+      }
+      &:focus + .label {
+         top: -5px;
+         font-size: 14px;
+      }
+   }
+   .label {
+      color: $neutral_5;
+      font-size: 12px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+   }
+   .icon {
+    position: absolute;
+    right: 0;
+    bottom: 3px;
+   }
+   .error {
+    position: absolute;
+    color: $error;
+    bottom: -20px;
+    font-size: 14px;
+   }
+}
