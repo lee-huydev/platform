@@ -1,58 +1,63 @@
 @import '../../styles/variables';
-.header_container {
-   display: flex;
-   flex-direction: column;
-   align-items: flex-start;
-   padding: 24px 0px 20px;
-   width: 1920px;
-   height: 124px;
-   background: $primary_7;
-   backdrop-filter: blur(40px);
-   flex: none;
-   order: 0;
-   flex-grow: 0;
-   .header_container {
+.container_fluid {
+   width: 100%;
+   height: 88px;
+   display: block;
+   background-color: $primary_7;
+   .row {
+      padding: 0 20px;
+      width: 100%;
+      height: 100%;
+      margin-left: auto;
+      margin-right: auto;
       display: flex;
-      flex-direction: row;
-      align-items: center;
-      padding: 12px 48px;
-      gap: 48px;
-      width: 1920px;
-      height: 80px;
-      flex: none;
-      order: 2;
-      align-self: stretch;
-      flex-grow: 0;
-      .left {
-         display: flex;
-         flex-direction: row;
-         align-items: flex-start;
-         padding: 0px;
-         gap: 24px;
-         width: 744px;
-         height: 56px;
-         opacity: 0;
-         flex: none;
-         order: 0;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: stretch;
+      .column_left {
+         width: 30%;
+         justify-content: flex-start;
+      }
+      .column_center {
+         width: 40%;
          flex-grow: 1;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         img {
+            width: 80%;
+            height: 30%;
+            max-width: 200px;
+         }
       }
-      .logo {
-         position: absolute;
-         width: 244.22px;
-         height: 60.4px;
-         left: 837.69px;
-         top: 9.61px;
-         background: linear-gradient(
-            90deg,
-            #57b2a3 0%,
-            #da696a 15.78%,
-            #bcd780 32.94%,
-            #454fbb 49.58%,
-            #81599a 69.83%,
-            #da696a 100%
-         );
-      }
-      .right {
+      .column_right {
+         width: 30%;
+         position: relative;
+         justify-content: flex-end;
+         display: flex;
+         align-items: center;
+         padding-right: 30px;
+         .wrapper {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            .right {
+               a {
+                  width: 40px;
+                  height: 40px;
+                  overflow: hidden;
+                  .img_wrapper {
+                    width: 100%;
+                    height: 100%;
+                    img {
+                        border-radius: 50%;
+                        width: 45px;
+                    }
+                  }
+               }
+            }
+         }
       }
    }
 }

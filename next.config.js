@@ -5,7 +5,8 @@ const nextConfig = {
   swcMinify: true,
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
-  }
+  },
+  eslint: { ignoreDuringBuilds: true },
 }
 
 module.exports = nextConfig
