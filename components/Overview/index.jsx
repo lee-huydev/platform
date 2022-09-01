@@ -1,8 +1,12 @@
 import style from './style.module.scss'
-import Input from '../partials/Input'
-import InputNum from '../partials/InputNum'
-const Overview = () => {
-    return <InputNum />
-}
+import Button  from '../partials/Button/index'
+import Popup from '../Popup/index';
+export default function Home() {
+    return (
+      <>
+        {/* <Popup/> */}
+      </>
 
-export default Overview
+
+    );
+  }

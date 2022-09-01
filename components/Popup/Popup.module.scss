@@ -1,0 +1,13 @@
+@import '../../styles/variables';
+.title {
+    color: $primary_1
+}
+.Popup_container{
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    border-radius: 4px;
+    box-shadow: 1px 2px 2px $primary_1;
+    margin: 14px;
+}
+

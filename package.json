@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "classname": "^0.0.0",
+    "classnames": "^2.3.1",
     "lord-icon-element": "^3.4.3",
     "lottie-web": "^5.9.6",
     "next": "12.2.5",
